@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,20 +19,33 @@
   <link rel="preload" href="fonts/nunito-v25-latin_cyrillic-regular.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/nunito-v25-latin_cyrillic-800.woff2" as="font" crossorigin>
 
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/container.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/order.css">
+  <link rel="stylesheet" href="css/count.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/modal-product.css">
+  <link rel="stylesheet" href="css/ingredients.css">
+  <link rel="stylesheet" href="css/modal-delivery.css">
+
 </head>
+
 <body>
 
   <header class="header">
     <div class="container header__container">
-      <svg class="header__logo" viewBox="0 0 199 44" role="img" aria-label="Логотип YourMeal">
-        <use href="img/sprite.svg#logo" />
-      </svg>
-        
-      <div class="header__title-container">
+      <img class="header__logo" src="img/logo.svg" alt="Логотип YourMeal">
+
+      <div class="header__wrapper">
         <h1 class="header__title">
-          <span class="header__title-text">Только самые</span>
-          <span class="header__title-text header__title-text_red">сочные бургеры!</span>
+          <span>Только самые</span>
+          <span class="header__red">сочные бургеры!</span>
         </h1>
 
         <p class="header__appeal">Бесплатная доставка от 599₽</p>
@@ -275,31 +289,29 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
-        <svg class="footer__logo" viewBox="0 0 199 44" role="img" aria-label="Логотип YourMeal">
-          <use href="img/sprite.svg#logo" />
-        </svg>
+        <img class="footer__logo" src="img/logo-o.svg" alt="Логотип YourMeal">
 
         <address class="footer__address">
           <div class="footer__contact">
             <h2 class="footer__title">Номер для заказа</h2>
-                        
+
             <a class="footer__link-phone" href="tel:+79308333811">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z" />
               </svg>
-                
+
               <span>+7(930)833-38-11</span>
             </a>
           </div>
 
           <div class="footer__contact">
             <h2 class="footer__title footer__title_sn">Мы в соцсетях</h2>
-                        
+
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a href="#" class="footer__link-sn" aria-label="группа в вк">
                   <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M18 0C8.05875 0 0 8.05875 0 18C0 27.9412 8.05875 36 18 36C27.9412 36 36 27.9412 36 18C36 8.05875 27.9412 0 18 0ZM24.9225 20.3081C24.9225 20.3081 26.5144 21.8794 26.9062 22.6087C26.9175 22.6237 26.9231 22.6387 26.9269 22.6462C27.0862 22.9144 27.1237 23.1225 27.045 23.2781C26.9137 23.5369 26.4637 23.6644 26.31 23.6756H23.4975C23.3025 23.6756 22.8937 23.625 22.3987 23.2837C22.0181 23.0175 21.6431 22.5806 21.2775 22.155C20.7319 21.5212 20.2594 20.9738 19.7831 20.9738C19.7226 20.9736 19.6625 20.9831 19.605 21.0019C19.245 21.1181 18.7838 21.6319 18.7838 23.0006C18.7838 23.4281 18.4462 23.6737 18.2081 23.6737H16.92C16.4812 23.6737 14.1956 23.52 12.1706 21.3844C9.69187 18.7687 7.46062 13.5225 7.44187 13.4737C7.30125 13.1344 7.59187 12.9525 7.90875 12.9525H10.7494C11.1281 12.9525 11.2519 13.1831 11.3381 13.3875C11.4394 13.6256 11.8106 14.5725 12.42 15.6375C13.4081 17.3737 14.0138 18.0787 14.4994 18.0787C14.5904 18.0777 14.6799 18.0545 14.76 18.0112C15.3937 17.6587 15.2756 15.3994 15.2475 14.9306C15.2475 14.8425 15.2456 13.92 14.9212 13.4775C14.6887 13.1569 14.2931 13.035 14.0531 12.99C14.1503 12.856 14.2782 12.7473 14.4262 12.6731C14.8612 12.4556 15.645 12.4237 16.4231 12.4237H16.8563C17.7 12.435 17.9175 12.4894 18.2231 12.5662C18.8419 12.7144 18.855 13.1137 18.8006 14.4806C18.7838 14.8687 18.7669 15.3075 18.7669 15.825C18.7669 15.9375 18.7612 16.0575 18.7612 16.185C18.7425 16.8806 18.72 17.67 19.2112 17.9944C19.2753 18.0346 19.3494 18.056 19.425 18.0562C19.5956 18.0562 20.1094 18.0562 21.5006 15.6694C21.9297 14.9011 22.3025 14.1028 22.6162 13.2806C22.6444 13.2319 22.7269 13.0819 22.8244 13.0237C22.8963 12.9871 22.9761 12.9684 23.0569 12.9694H26.3962C26.76 12.9694 27.0094 13.0237 27.0562 13.1644C27.1387 13.3875 27.0412 14.0681 25.5169 16.1325L24.8362 17.0306C23.4544 18.8419 23.4544 18.9338 24.9225 20.3081Z" />
+                    <path d="M18 0C8.05875 0 0 8.05875 0 18C0 27.9412 8.05875 36 18 36C27.9412 36 36 27.9412 36 18C36 8.05875 27.9412 0 18 0ZM24.9225 20.3081C24.9225 20.3081 26.5144 21.8794 26.9062 22.6087C26.9175 22.6237 26.9231 22.6387 26.9269 22.6462C27.0862 22.9144 27.1237 23.1225 27.045 23.2781C26.9137 23.5369 26.4637 23.6644 26.31 23.6756H23.4975C23.3025 23.6756 22.8937 23.625 22.3987 23.2837C22.0181 23.0175 21.6431 22.5806 21.2775 22.155C20.7319 21.5212 20.2594 20.9738 19.7831 20.9738C19.7226 20.9736 19.6625 20.9831 19.605 21.0019C19.245 21.1181 18.7838 21.6319 18.7838 23.0006C18.7838 23.4281 18.4462 23.6737 18.2081 23.6737H16.92C16.4812 23.6737 14.1956 23.52 12.1706 21.3844C9.69187 18.7687 7.46062 13.5225 7.44187 13.4737C7.30125 13.1344 7.59187 12.9525 7.90875 12.9525H10.7494C11.1281 12.9525 11.2519 13.1831 11.3381 13.3875C11.4394 13.6256 11.8106 14.5725 12.42 15.6375C13.4081 17.3737 14.0138 18.0787 14.4994 18.0787C14.5904 18.0777 14.6799 18.0545 14.76 18.0112C15.3937 17.6587 15.2756 15.3994 15.2475 14.9306C15.2475 14.8425 15.2456 13.92 14.9212 13.4775C14.6887 13.1569 14.2931 13.035 14.0531 12.99C14.1503 12.856 14.2782 12.7473 14.4262 12.6731C14.8612 12.4556 15.645 12.4237 16.4231 12.4237H16.8563C17.7 12.435 17.9175 12.4894 18.2231 12.5662C18.8419 12.7144 18.855 13.1137 18.8006 14.4806C18.7838 14.8687 18.7669 15.3075 18.7669 15.825C18.7669 15.9375 18.7612 16.0575 18.7612 16.185C18.7425 16.8806 18.72 17.67 19.2112 17.9944C19.2753 18.0346 19.3494 18.056 19.425 18.0562C19.5956 18.0562 20.1094 18.0562 21.5006 15.6694C21.9297 14.9011 22.3025 14.1028 22.6162 13.2806C22.6444 13.2319 22.7269 13.0819 22.8244 13.0237C22.8963 12.9871 22.9761 12.9684 23.0569 12.9694H26.3962C26.76 12.9694 27.0094 13.0237 27.0562 13.1644C27.1387 13.3875 27.0412 14.0681 25.5169 16.1325L24.8362 17.0306C23.4544 18.8419 23.4544 18.9338 24.9225 20.3081Z" />
                   </svg>
                 </a>
               </li>
@@ -369,8 +381,8 @@
 
       <button class="modal__close">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <rect x="5.07422" y="5.28247" width="1" height="20" transform="rotate(-45 5.07422 5.28247)"/>
-          <rect x="5.78125" y="19.4246" width="1" height="20" transform="rotate(-135 5.78125 19.4246)"/>
+          <rect x="5.07422" y="5.28247" width="1" height="20" transform="rotate(-45 5.07422 5.28247)" />
+          <rect x="5.78125" y="19.4246" width="1" height="20" transform="rotate(-135 5.78125 19.4246)" />
         </svg>
       </button>
     </div>
@@ -412,11 +424,12 @@
 
       <button class="modal__close" type="button">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <rect x="5.07422" y="5.28247" width="1" height="20" transform="rotate(-45 5.07422 5.28247)"/>
-          <rect x="5.78125" y="19.4246" width="1" height="20" transform="rotate(-135 5.78125 19.4246)"/>
+          <rect x="5.07422" y="5.28247" width="1" height="20" transform="rotate(-45 5.07422 5.28247)" />
+          <rect x="5.78125" y="19.4246" width="1" height="20" transform="rotate(-135 5.78125 19.4246)" />
         </svg>
       </button>
     </div>
   </div>
 </body>
+
 </html>
