@@ -1,4 +1,4 @@
-.modal-product {
+.mproduct {
   background-color: #FFFFFF;
   width: 100%;
   min-height: 100%;
@@ -6,45 +6,45 @@
   display: flex;
 }
 
-.modal-product__container {
+.mproduct__container {
   max-width: 300px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-.modal-product__title {
+.mproduct__title {
   font-weight: 600;
   font-size: 28px;
   line-height: 120%;
   margin-bottom: 12px;
 }
 
-.modal-product__content {
+.mproduct__content {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-.modal-product__image {
+.mproduct__image {
   width: 100%;
   border-radius: 16px;
   margin-bottom: 16px;
 }
 
-.modal-product__description {
+.mproduct__description {
   font-weight: 400;
   font-size: 12px;
   line-height: 130%;
   margin-bottom: 10px;
 }
 
-.modal-product__ingredients {
+.mproduct__ingredients {
   flex-grow: 1;
   margin-bottom: 10px;
 }
 
-.modal-product__add {
+.mproduct__add {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +52,7 @@
   margin-bottom: 16px;
 }
 
-.modal-product__btn {
+.mproduct__btn {
   flex-grow: 1;
   padding: 9px;
   background-color: #FF7020;
@@ -63,7 +63,7 @@
   color: #FFFFFF;
 }
 
-.modal-product__price {
+.mproduct__price {
   text-align: right;
   font-weight: 600;
   font-size: 16px;
@@ -71,7 +71,7 @@
 }
 
 @media (min-width: 480px) {
-  .modal-product {
+  .mproduct {
     max-width: 524px;
     min-height: auto;
     width: 100%;
@@ -80,15 +80,15 @@
     border-radius: 24px;
   }
 
-  .modal-product__container {
+  .mproduct__container {
     max-width: unset;
   }
 
-  .modal-product__title {
+  .mproduct__title {
     margin-bottom: 16px;
   }
 
-  .modal-product__content {
+  .mproduct__content {
     display: grid;
     grid-template-columns: 226px 1fr;
     grid-template-rows: min-content 1fr;
@@ -96,37 +96,37 @@
     margin-bottom: 22px;
   }
 
-  .modal-product__image {
+  .mproduct__image {
     grid-row: 1 / 3;
     margin-bottom: 0;
   }
 
-  .modal-product__description {
+  .mproduct__description {
     grid-row: 1 / 1;
     margin-bottom: 0;
   }
 
-  .modal-product__ingredients {
+  .mproduct__ingredients {
     grid-row: 2 / 3;
     margin-bottom: 0;
   }
 
-  .modal-product__footer {
+  .mproduct__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .modal-product__add {
+  .mproduct__add {
     margin-bottom: 0;
   }
 
-  .modal-product__btn {
+  .mproduct__btn {
     width: 218px;
     flex-grow: 0;
   }
 
-  .modal-product__price {
+  .mproduct__price {
     text-align: right;
     font-weight: 600;
     font-size: 16px;
@@ -135,17 +135,17 @@
 }
 
 @media (min-width: 1024px) {
-  .modal-product {
+  .mproduct {
     max-width: 684px;
     padding: 24px 24px 36px;
   }
 
-  .modal-product__title {
+  .mproduct__title {
     font-size: 40px;
     margin-bottom: 24px;
   }
 
-  .modal-product__content {
+  .mproduct__content {
     grid-template-columns: 276px 1fr;
     gap: 10px 16px;
     margin-bottom: 38px;
@@ -153,16 +153,16 @@
 
 
 
-  .modal-product__description {
+  .mproduct__description {
     font-size: 16px;
   }
 
-  .modal-product__btn {
+  .mproduct__btn {
     width: 276px;
     padding: 12px;
   }
 
-  .modal-product__price {
+  .mproduct__price {
     font-size: 24px;
   }
 }

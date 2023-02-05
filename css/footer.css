@@ -24,7 +24,7 @@
   margin-bottom: 8px;
 }
 
-.footer__link-phone {
+.footer__phone {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -38,14 +38,14 @@
   gap: 16px;
 }
 
-.footer__link-sn {
+.footer__sn {
   color: #FF7020;
 }
 
-.footer__link-phone:hover,
-.footer__link-phone:focus, 
-.footer__link-sn:hover,
-.footer__link-sn:focus {
+.footer__phone:hover,
+.footer__phone:focus, 
+.footer__sn:hover,
+.footer__sn:focus {
   color: #FFAB08;
 }
 
@@ -116,7 +116,7 @@
     margin-bottom: 22px;
   }
 
-  .footer__link-phone {
+  .footer__phone {
     font-size: 16px;
   }
 
